@@ -32,6 +32,45 @@ p{color:var(--rose);max-width:690px}
 .card h3{font-size:25px;margin:8px 0}
 footer{text-align:center;padding:40px 20px;border-top:1px solid #754354;color:var(--rose);font:13px Arial,sans-serif}
 @media(max-width:600px){header{display:block}nav{margin-top:12px}nav a{margin:0 12px 0 0}section{padding:55px 7%}}
+
+:root{--bg:#240b15;--cream:#fff4e7;--rose:#e6c7ce;--gold:#e4ba95;--line:#704454}
+html{scroll-padding-top:24px}
+body{background:radial-gradient(ellipse at 95% 0%,#4a1d2c 0,transparent 45%),var(--bg);font-size:18px}
+a{color:var(--cream);text-underline-offset:5px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
+.skip-link{position:absolute;top:10px;left:16px;z-index:10;padding:12px 18px;background:var(--cream);color:var(--bg);transform:translateY(-160%)}
+.skip-link:focus{transform:translateY(0)}
+header{max-width:1280px;margin:auto;padding:24px 6%;gap:24px}
+a.logo{color:var(--cream);text-decoration:none;white-space:nowrap;font:700 14px Arial,sans-serif;letter-spacing:3px}
+nav{display:flex;flex-wrap:wrap;gap:8px 20px}
+nav a{display:inline-flex;align-items:center;min-height:44px;margin:0;color:var(--rose);font-size:14px}
+nav a:hover{color:var(--cream);text-decoration:underline}
+section{max-width:1120px;padding:88px 7%;border-bottom:1px solid #70445466}
+section:last-child{border-bottom:0}
+.hero{min-height:78vh;padding-top:88px;padding-bottom:88px;position:relative}
+.hero h1{font-size:clamp(66px,11vw,128px);letter-spacing:-.055em;margin:26px 0 18px}
+.hero h2{font-size:clamp(28px,4vw,42px);margin:28px 0 0;font-weight:normal}
+.hero p{margin:14px 0;max-width:590px}
+.eyebrow{line-height:1.6;font-size:11px;letter-spacing:2.5px}
+h2{letter-spacing:-.035em;margin:20px 0 24px}
+h3{line-height:1.3;letter-spacing:-.02em}
+p{max-width:700px}
+.button,button.button{min-height:48px;display:inline-flex;align-items:center;justify-content:center;background:#98425b;border:1px solid #b66b80;padding:14px 22px;border-radius:4px;font:600 14px/1.4 Arial,sans-serif;cursor:pointer;transition:background .18s ease,transform .18s ease}
+.button:hover{background:#b45770;transform:translateY(-2px)}
+.button.outline{background:transparent;border-color:#a97585}
+.button.outline:hover{background:#ffffff0c}
+.card{padding:clamp(24px,5vw,44px);border-radius:8px;background:linear-gradient(135deg,#411522,#300e1b);border-color:var(--line);margin:24px 0}
+.card h3{font-size:clamp(26px,4vw,36px);margin:12px 0}
+#livros .card:first-of-type{border-left:3px solid var(--gold)}
+#contato{padding-bottom:96px}
+footer{line-height:1.7}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.actions .button{margin:0}
+@media(min-width:900px){#sobre{display:grid;grid-template-columns:1fr 1.25fr;column-gap:64px}#sobre .eyebrow{grid-column:1/-1}#sobre h2{grid-column:1;grid-row:2/4}#sobre p{grid-column:2}#sobre p:first-of-type{margin-top:20px}}
+@media(max-width:640px){body{font-size:17px}header{display:flex;align-items:flex-start;flex-direction:column;gap:12px;padding:20px 6%}nav{margin:0;gap:4px 16px}nav a{margin:0;font-size:13px}section{padding:56px 6%}.hero{min-height:auto;padding-top:64px;padding-bottom:64px}.hero h1{font-size:clamp(64px,18vw,100px)}.button{max-width:100%;text-align:center}.actions{align-items:stretch}.actions .button{flex:1 1 180px}.card{padding:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}.button:hover{transform:none}}
+@media print{body{background:white;color:#171717;font-size:11pt}header,footer,.skip-link,.actions,.button{display:none!important}section,.hero{padding:16px 0;min-height:0;border:0;max-width:none}h1,.hero h1{font-size:34pt;margin:10px 0}h2,.hero h2{font-size:20pt;margin:14px 0}h3,.card h3{font-size:15pt}p,.eyebrow,.muted,strong,a{color:#171717!important}.card{background:none;border:1px solid #bbb;padding:16px;break-inside:avoid}a{overflow-wrap:anywhere}a[href^="https://"]:after{content:" (" attr(href) ")";font-size:9pt}#sobre{display:block}}
+
 </style>
 <script type="application/ld+json">
 {
@@ -69,18 +108,19 @@ footer{text-align:center;padding:40px 20px;border-top:1px solid #754354;color:va
 </script>
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <header>
-<div class="logo">BRUNO BECKER</div>
-<nav><a href="#sobre">Sobre</a><a href="#livros">Livros</a><a href="#audiovisual">Audiovisual</a><a href="./imprensa.html">Press Kit</a><a href="#contato">Contato</a></nav>
+<a class="logo" href="./" aria-label="Bruno Becker — página inicial">BRUNO BECKER</a>
+<nav aria-label="Navegação principal"><a href="#sobre">Sobre</a><a href="#livros">Livros</a><a href="#audiovisual">Audiovisual</a><a href="./imprensa.html">Press Kit</a><a href="#contato">Contato</a></nav>
 </header>
-<main>
+<main id="conteudo">
 <section class="hero">
 <span class="eyebrow">Literatura · Narrativas · Audiovisual</span>
 <h1>Bruno<br>Becker.</h1>
 <p>Escritor & Criador Audiovisual</p>
 <h2>Histórias que permanecem.</h2>
 <p>Encontros, escolhas, memórias e tudo aquilo que permanece depois da chuva.</p>
-<div><a class="button" href="#livros">Conheça os livros</a><a class="button outline" href="#sobre">Sobre o autor</a></div>
+<div class="actions"><a class="button" href="#livros">Conheça os livros</a><a class="button outline" href="#sobre">Sobre o autor</a></div>
 </section>
 <section id="sobre">
 <span class="eyebrow">Sobre o autor</span>
@@ -96,7 +136,7 @@ footer{text-align:center;padding:40px 20px;border-top:1px solid #754354;color:va
 <span class="eyebrow">Livro 1</span>
 <h3>Depois da Chuva</h3>
 <p>Caio e Miguel se reencontram onze anos depois, em Porto Sereno. Entre silêncios e segredos, precisam enfrentar o passado e descobrir se ainda existe espaço para um novo começo.</p>
-<a class="button" href="https://www.amazon.com/dp/B0HF7QFD3P" target="_blank" rel="noopener">Ver na Amazon</a>
+<a class="button" href="https://www.amazon.com/dp/B0HF7QFD3P" target="_blank" rel="noopener noreferrer">Ver na Amazon</a>
 </div>
 <div class="card">
 <span class="eyebrow">Projeto literário</span>
