@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brunoabecker.github.io/becker-perfil-/sitemap.xml
