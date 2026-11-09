@@ -42,6 +42,7 @@ footer{text-align:center;padding:40px 20px;border-top:1px solid #754354;color:va
 @media(max-width:600px){header{display:block}nav{margin-top:12px}nav a{margin:0 12px 0 0}section{padding:55px 7%}}
 
 a{color:var(--cream)} .muted{font:13px Arial,sans-serif;color:var(--rose)} .actions{display:flex;flex-wrap:wrap;gap:10px} .actions .button{margin:0} strong{color:var(--cream)}
+.bio-grid{display:grid;grid-template-columns:200px 1fr;gap:clamp(28px,5vw,56px);align-items:start}.author-photo{display:block;width:200px;height:200px;object-fit:cover;border-radius:50%;border:1px solid var(--line);box-shadow:0 24px 60px #0007}@media(max-width:640px){.bio-grid{grid-template-columns:1fr}.author-photo{width:160px;height:160px}}
 
 :root{--bg:#240b15;--cream:#fff4e7;--rose:#e6c7ce;--gold:#e4ba95;--line:#704454}
 html{scroll-padding-top:24px}
@@ -103,6 +104,7 @@ footer{line-height:1.7}
     "name": "Bruno Becker",
     "alternateName": "Bruno A. Becker",
     "url": "https://brunoabecker.github.io/becker-perfil-/",
+    "image": "https://brunoabecker.github.io/becker-perfil-/assets/bruno-becker-autor.webp",
     "jobTitle": ["Escritor", "Criador audiovisual"],
     "sameAs": [
       "https://www.amazon.com/stores/author/B0HH5Y7FHC/about",
@@ -127,13 +129,13 @@ footer{line-height:1.7}
 <section id="biografia">
 <span class="eyebrow">Biografia autorizada</span>
 <h2>Sobre Bruno Becker</h2>
-<p>Bruno Becker é um escritor brasileiro residente em Portugal e criador audiovisual. Suas narrativas exploram relações humanas, afetos LGBTQIA+, memória, escolhas e recomeços. Sua produção reúne literatura de ficção e projetos de adaptação e narrativa visual.</p>
+<div class="bio-grid"><img class="author-photo" src="./assets/bruno-becker-autor.webp" width="200" height="200" alt="Retrato oficial de Bruno Becker"/><div><p>Bruno Becker é autor brasileiro radicado em Portugal, apaixonado por histórias sobre encontros, desencontros e tudo aquilo que permanece quando duas pessoas seguem caminhos diferentes. Em seus romances, explora relações humanas, afetos LGBTQIA+, escolhas difíceis e as marcas que o tempo deixa — ou não consegue apagar.</p><p>Em <em>Depois da Chuva</em>, seu romance de estreia, conta a história de Caio e Miguel, dois homens separados pelo passado que se reencontram onze anos depois em Porto Sereno. Bruno escreve para leitores que gostam de romances emocionais, personagens adultos e imperfeitos e histórias em que amar não resolve tudo — mas pode ser o começo de uma escolha diferente.</p></div></div>
 <p class="muted">Texto de apresentação fornecido pelo site oficial do autor; não constitui reportagem ou avaliação independente.</p>
 </section>
 <section id="obras">
 <span class="eyebrow">Literatura</span>
 <h2>Obras e universo literário</h2>
-<div class="card"><h3>Depois da Chuva</h3><p>Obra do universo <em>Corações da Costa</em>. Caio e Miguel se reencontram onze anos depois, em Porto Sereno. Entre silêncios e segredos, precisam enfrentar o passado e a possibilidade de um novo começo.</p><div class="actions"><a class="button" href="./depois-da-chuva.html">Página oficial do livro</a><a class="button outline" href="https://www.amazon.com/dp/B0HF7QFD3P" rel="noopener noreferrer" target="_blank">Amazon</a></div></div>
+<div class="card"><h3>Depois da Chuva</h3><p>Obra do universo <em>Corações da Costa</em>. Caio e Miguel se reencontram onze anos depois, em Porto Sereno. Entre silêncios e segredos, precisam enfrentar o passado e a possibilidade de um novo começo.</p><p><strong>Autores:</strong> Bruno Becker e Jairo Alencar · <strong>ISBN-13 da edição impressa:</strong> 979-8193136071 · <strong>Idioma:</strong> português.</p><div class="actions"><a class="button" href="./depois-da-chuva.html">Página oficial do livro</a><a class="button outline" href="https://www.amazon.com/dp/B0HF7QFD3P" rel="noopener noreferrer sponsored" target="_blank">Amazon</a></div></div>
 <div class="card"><h3>Um Oceano de Segredos</h3><p>Segundo livro de <em>Corações da Costa</em>, de Bruno Becker. Continuação de <em>Depois da Chuva</em>, com lançamento previsto para 15 de novembro de 2026.</p><div class="actions"><a class="button" href="./um-oceano-de-segredos.html">Página oficial do livro</a><a class="button outline" href="https://www.amazon.com/dp/B0HNH7ZZ1B" rel="noopener noreferrer" target="_blank">Pré-venda na Amazon</a></div></div>
 </section>
 <section id="audiovisual">
