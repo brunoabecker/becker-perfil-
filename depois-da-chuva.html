@@ -43,6 +43,15 @@ h1{font-size:clamp(54px,8vw,104px);line-height:.98;letter-spacing:-.055em;margin
 footer{position:relative;z-index:1;text-align:center;padding:40px 20px;color:var(--mist);font:13px/1.7 Arial,sans-serif}
 @media(max-width:760px){body{font-size:17px}header{align-items:flex-start;flex-direction:column;gap:12px;padding:20px 6%}.hero,section{padding:56px 6%}.hero{min-height:auto;grid-template-columns:1fr}.cover-wrap{max-width:280px;margin:auto}.hero-copy{text-align:left}.facts{grid-template-columns:1fr}.actions .button{flex:1 1 190px;text-align:center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Ajustes de leitura e navegação do livro */
+#sinopse .card p{font-size:clamp(19px,2.4vw,24px);line-height:1.65;color:var(--paper)}
+#onde-comprar .card:last-child{background:transparent}
+#onde-comprar .card:last-child .actions .button{font-size:13px}
+.hero .lead{max-width:550px}
+.hero-copy>p:not(.lead){max-width:560px}
+.card[aria-label="Compartilhar o livro"]{border-left:3px solid var(--bronze)}
+@media(max-width:600px){.hero{gap:20px}.hero .actions .button{flex:1 1 100%;text-align:center}}
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -96,29 +105,31 @@ footer{position:relative;z-index:1;text-align:center;padding:40px 20px;color:var
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-<header><a aria-label="Bruno Becker — página inicial" class="logo" href="./">BRUNO BECKER</a><nav aria-label="Navegação principal"><a href="./">Site oficial</a><a href="./#livros">Livros</a><a href="./imprensa.html">Press Kit</a><a href="./porto-sereno.html">Porto Sereno</a></nav></header>
+<header><a aria-label="Bruno Becker — página inicial" class="logo" href="./">BRUNO BECKER</a><nav aria-label="Navegação principal"><a href="./">Site oficial</a><a href="./#livro">O livro</a><a href="#sinopse">Sinopse</a><a href="#onde-comprar">Comprar</a></nav></header>
 <main id="conteudo">
 <section class="hero">
 <div class="cover-wrap"><img alt="Capa de Depois da Chuva, com duas chaves antigas sobre madeira molhada sob um céu de tempestade" class="cover" height="522" src="./assets/depois-da-chuva-capa.jpg" width="326"/></div>
 <div class="hero-copy">
 <span class="eyebrow">Corações da Costa · Livro 1</span>
 <h1>Depois<br/>da Chuva.</h1>
-<p class="lead">Um romance sobre voltar — e escolher ficar, de Bruno Becker e Jairo Alencar.</p>
-<div class="actions"><a class="button" href="#onde-comprar">Onde comprar o livro</a><a class="button outline" href="#sinopse">Ler a sinopse</a></div>
+<p class="lead">Ele voltou depois de onze anos. Miguel nunca esqueceu sua partida.</p><p>Um romance LGBTQIA+ sobre reencontros, escolhas difíceis e a coragem de recomeçar, de Bruno Becker e Jairo Alencar.</p>
+<div class="actions"><a class="button" href="https://www.amazon.com/dp/B0HF7QFD3P" rel="noopener noreferrer" target="_blank">Ver livro na Amazon</a><a class="button outline" href="#sinopse">Ler sinopse sem spoilers</a></div>
 </div>
-</section>
-<section id="onde-comprar">
-<span class="eyebrow">Disponibilidade internacional</span>
-<h2>Encontre Depois da Chuva.</h2>
-<p>Consulte formatos e disponibilidade nos canais oficiais de venda.</p>
-<div class="card"><h3>Amazon</h3><p>Acesse a página oficial do livro para consultar as opções disponíveis.</p><div class="actions"><a class="button" href="https://www.amazon.com/dp/B0HF7QFD3P" rel="noopener noreferrer" target="_blank">Ver Depois da Chuva na Amazon</a></div></div>
-<div class="card"><h3>Outras livrarias e marketplaces</h3><p>Encontre o livro em plataformas internacionais.</p><div class="actions"><a class="button outline" href="https://www.bol.com/nl/nl/b/bruno-becker/610086237/" rel="noopener noreferrer" target="_blank">bol · Países Baixos</a><a class="button outline" href="https://www.ibs.it/depois-da-chuva-um-romance-libro-inglese-jairo-alencar-bruno-becker/e/9798193136071" rel="noopener noreferrer" target="_blank">IBS · Itália</a><a class="button outline" href="https://www.abebooks.fr/9798193136071/Depois-Chuva-romance-voltar-escolher/plp" rel="noopener noreferrer" target="_blank">AbeBooks · Internacional</a></div></div>
 </section>
 <section id="sinopse">
 <span class="eyebrow">Sinopse</span>
 <h2>Onze anos depois, o passado ainda permanece.</h2>
 <div class="card"><p>Caio e Miguel se reencontram onze anos depois, em Porto Sereno. Entre silêncios e segredos, precisam enfrentar o passado e descobrir se ainda existe espaço para um novo começo.</p></div>
 </section>
+<section class="card" aria-label="Compartilhar o livro"><h2>Conhece alguém que leria esta história?</h2><p>Envie a página oficial de <em>Depois da Chuva</em> para alguém que goste de romances sobre segundas chances.</p><div class="actions"><a class="button outline" href="https://wa.me/?text=Depois%20da%20Chuva%2C%20romance%20LGBTQIA%2B%20de%20Bruno%20Becker%20e%20Jairo%20Alencar%3A%20https%3A%2F%2Fbrunoabecker.github.io%2Fbecker-perfil-%2Fdepois-da-chuva.html" rel="noopener noreferrer" target="_blank">Compartilhar pelo WhatsApp</a></div></section>
+<section id="onde-comprar">
+<span class="eyebrow">Disponibilidade internacional</span>
+<h2>Encontre Depois da Chuva.</h2>
+<p>O livro está disponível na Amazon. Consulte o formato, o preço e a entrega conforme seu país.</p>
+<div class="card"><h3>Amazon</h3><p>Acesse a página oficial do livro para consultar as opções disponíveis.</p><div class="actions"><a class="button" href="https://www.amazon.com/dp/B0HF7QFD3P" rel="noopener noreferrer" target="_blank">Ver Depois da Chuva na Amazon</a></div></div>
+<div class="card"><h3>Outras livrarias e marketplaces</h3><p>Encontre o livro em plataformas internacionais.</p><div class="actions"><a class="button outline" href="https://www.bol.com/nl/nl/b/bruno-becker/610086237/" rel="noopener noreferrer" target="_blank">bol · Países Baixos</a><a class="button outline" href="https://www.ibs.it/depois-da-chuva-um-romance-libro-inglese-jairo-alencar-bruno-becker/e/9798193136071" rel="noopener noreferrer" target="_blank">IBS · Itália</a><a class="button outline" href="https://www.abebooks.fr/9798193136071/Depois-Chuva-romance-voltar-escolher/plp" rel="noopener noreferrer" target="_blank">AbeBooks · Internacional</a></div></div>
+</section>
+
 <section>
 <span class="eyebrow">Sobre a obra</span>
 <h2>Amor, memória e recomeços.</h2>
@@ -126,13 +137,13 @@ footer{position:relative;z-index:1;text-align:center;padding:40px 20px;color:var
 <p>A narrativa aborda personagens adultos, relações humanas, escolhas difíceis e as marcas deixadas pelo tempo.</p>
 <p>O livro também tem edição em inglês: <a href="./after-the-rain.html" lang="en"><em>After the Rain — A Second Chance Coastal Romance</em></a>, ISBN 9798170648795.</p>
 <div aria-label="Informações das edições" class="facts"><div class="fact"><strong>979-8193136071</strong><span>ISBN-13 · capa comum</span></div><div class="fact"><strong>317 / 272</strong><span>páginas · Kindle / impressa</span></div><div class="fact"><strong>Livro 1</strong><span>Corações da Costa</span></div></div>
-<div class="actions"><a class="button" href="#onde-comprar">Encontrar o livro</a><a class="button outline" href="./#sobre">Sobre Bruno Becker</a><a class="button outline" href="./imprensa.html#obras">Informações para imprensa</a></div>
+<div class="actions"><a class="button" href="#onde-comprar">Encontrar o livro</a><a class="button outline" href="./#autor">Sobre Bruno Becker</a><a class="button outline" href="./imprensa.html#obras">Informações para imprensa</a></div>
 </section>
 <section id="ordem-de-leitura">
-<span class="eyebrow">Universo Porto Sereno</span>
-<h2>Por onde começar Corações da Costa?</h2>
-<p><em>Depois da Chuva</em> é o primeiro livro: o reencontro de Caio e Miguel após onze anos. <em>Um Oceano de Segredos</em> é a continuação dessa história.</p>
-<div class="actions"><a class="button" href="./um-oceano-de-segredos.html">Conhecer o Livro 2</a><a class="button outline" href="./#sobre">Conhecer Bruno Becker</a></div>
+<span class="eyebrow">Comece por aqui</span>
+<h2>Entre em Porto Sereno.</h2>
+<p><em>Depois da Chuva</em> é o primeiro livro da coleção <em>Corações da Costa</em>. Você pode começar por Caio e Miguel, conhecer os personagens sem spoilers e descobrir o cenário dessa história.</p>
+<div class="actions"><a class="button" href="./artigos/quem-sao-caio-e-miguel.html">Conhecer Caio e Miguel</a><a class="button outline" href="./#autor">Sobre Bruno Becker</a></div>
 </section>
 <section id="perguntas">
 <span class="eyebrow">Antes de ler</span><h2>Sobre Depois da Chuva</h2>
